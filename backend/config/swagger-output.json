@@ -1,0 +1,71 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API de Projetos",
+    "description": "Documentação gerada automaticamente com swagger-autogen",
+    "version": "1.0.0"
+  },
+  "host": "localhost:5000",
+  "basePath": "/Api",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/projetos": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "example": "any"
+                },
+                "descricao": {
+                  "example": "any"
+                },
+                "data_inicio": {
+                  "example": "any"
+                },
+                "data_termino": {
+                  "example": "any"
+                },
+                "tecnologias": {
+                  "example": "any"
+                },
+                "observacao": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}

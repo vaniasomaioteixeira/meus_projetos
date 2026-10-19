@@ -1,0 +1,22 @@
+# --- DEPENDÊNCIAS ---
+# Ignora as pastas node_modules de qualquer subpasta
+**/node_modules/
+
+# --- VARIÁVEIS DE AMBIENTE E SEGURANÇA ---
+# Ignora arquivos de configuração sensíveis ou locais (.env)
+.env
+**/ .env
+backend/.env
+frontend/.env
+
+# --- BUILD E COMPILAÇÃO (FRONTEND) ---
+# Ignora pastas de build/dist geradas pelo frontend
+frontend/dist/
+frontend/build/
+
+# --- LOGS E ARQUIVOS DO SISTEMA OPERACIONAL ---
+logs
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
