@@ -5,9 +5,10 @@
 # --- VARIÁVEIS DE AMBIENTE E SEGURANÇA ---
 # Ignora arquivos de configuração sensíveis ou locais (.env)
 .env
-**/ .env
+**/.env
 backend/.env
 frontend/.env
+backend/.env.docker
 
 # --- BUILD E COMPILAÇÃO (FRONTEND) ---
 # Ignora pastas de build/dist geradas pelo frontend

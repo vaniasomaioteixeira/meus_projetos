@@ -16,5 +16,5 @@ app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use("/api", ProjetoRoutes);
 
 app.listen(PORT, ()=>{
-    `Servidor rodando na porta ${PORT}`;
+    console.log(`Servidor rodando na porta ${PORT}`);
 });
